@@ -109,11 +109,18 @@ header {
     text-align: center;
     width: 60%;
     font-family: 'Questrial', sans-serif;
-    line-height: 25px;
+    line-height: 1.5em;
+}
+.perfil-texto h2 {
+    line-height: 1.5em;
 }
 
 .perfil-texto h4 {
     margin: 1em;
+}
+.perfil-texto a{
+    width: fit-content;
+    margin: auto;
 }
 
 .btn-descargar{
@@ -161,6 +168,74 @@ header {
 .habilidades:hover{
     background-color: rgba(196, 196, 196, 0.671);
 }
+
+/* *** Inicio - Proyectos *** */
+.contenedor-proyectos {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    gap: 50px;
+}
+.contenedor-proyectos img:hover{
+    -webkit-transform:scale(1.5);
+    transform:scale(1.5);
+}
+
+/* *** Inicio - Contacto *** */
+.formulario {
+    border: black solid thin;
+    width: fit-content;
+    text-align: center;
+    padding: 3em;
+    margin: auto;
+    margin-bottom: 2em;
+    border-radius: 1em;
+    box-shadow: 0px 15px 20px -12px rgba(0,0,0,0.59);
+    -webkit-box-shadow: 0px 15px 20px -12px rgba(0,0,0,0.59);
+    -moz-box-shadow: 0px 15px 20px -12px rgba(0,0,0,0.59);
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 500px;
+    padding: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+.formulario input {
+    height: 50px;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+.formulario textarea{
+    height: 100px;
+    border-radius: 2em;
+    border: #000000 solid thin;
+    padding: 1em;
+}
+
+.btn-enviar{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin: auto;
+    width: 100px;
+}
+.formulario .btn-enviar:hover{
+    background-color: #222222;
+}
+
+.logo-wsp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+  }
 
 /* *** Inicio - Footer *** */
 footer {

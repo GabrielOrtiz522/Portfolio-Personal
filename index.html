@@ -46,17 +46,18 @@
     </header> <!-- Fin de Barra de Navegación -->
     <main>
     
-        <div class="contenedor-perfil">
+        <div class="contenedor-perfil"> <!-- Información sobre mi -->
             <div class="perfil">
 
                 <div class="perfil-texto">
+                    <h2> Bienvenidos </h2>
                     <h2> Gabriel Jesus Ortiz</h2>
 
                     <h3> Front End Developer</h3>
 
                     <h4> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos tempore illo nihil aspernatur, facilis excepturi similique. Pariatur perspiciatis sint quo necessitatibus ullam non consectetur hic accusamus vel, consequatur reprehenderit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam molestiae quia reprehenderit maxime, minima nobis eum possimus praesentium officia veniam! Tenetur, repudiandae. Vitae repudiandae blanditiis laborum dolores reprehenderit quo ex. </h4>
 
-                        <a href="./files/CurriculumVitae-OrtizGabriel.pdf" download target="_blank">
+                        <a href="./files/CurriculumVitae-OrtizGabriel.pdf" download="CurriculumVitae-OrtizGabriel.pdf">
                             <button class="btn-descargar">
                                 Descargar CV <i class="fa-solid fa-download"></i>
                             </button>
@@ -70,6 +71,10 @@
         </div>
 
         <hr class="divisor">
+
+        <!-- =========================
+            Sección de Habilidades
+        ========================= -->        
 
         <div id="habilidades">
 
@@ -112,17 +117,60 @@
 
         <hr class="divisor">
 
-        <div id="proyectos">
+        <!-- =========================
+            Sección de Proyectos
+        ========================= -->
+
+        <div id="proyectos"> 
 
             <h2 class="titulos-generales"> Mis Proyectos </h2>
+
+            <div class="contenedor-proyectos">
+                <a href="https://distribuidora-warapallay.netlify.app/index.html" target="_blank"> <img src="./img/pag-wara.png" alt="Imagen de pagina web para Wara Pallay" width="500px"> </a>
+                
+                <a href="https://beneta.netlify.app/" target="_blank"> <img src="./img/pag-beneta.png" alt="Imagen de pagina web para Beneta" width="500px"> </a>
+                
+            </div>
 
         </div>
 
         <hr class="divisor">
 
-        <div id="contacto">
+        <!-- =========================
+            Sección de Contacto
+        ========================= -->
+
+        <div id="contacto"> 
+
 
             <h2 class="titulos-generales"> Contacto </h2>
+
+            <div class="formulario"> <!-- Inicio - Formulario -->
+
+                <form action="">
+
+                    <p> Nombre y Apellido </p>
+                    <input type="text">
+
+                    <p> Correo Electrónico </p>
+                    <input type="text">
+
+                    <p> Asunto </p>
+                    <input type="text">
+
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Inserte su mensaje aqui..."></textarea>
+
+                    <input type="submit" onclick="alert (`Si tan solo funcionara... pero aún puedes enviar un correo electrónico. 😊`)" value="Enviar" class="btn-enviar">
+
+                </form>
+
+            </div> <!-- Fin- Formulario -->
+
+            <div class="logo-wsp"> <!-- Botón Flotante de WhatsApp-->
+
+                <a href="https://api.whatsapp.com/send?phone=3512123516" target="_blank"> <img src="./img/whatsapp.png" alt="Icono de Whatsapp" width="50px"> </a>
+
+            </div>
 
         </div>
         
