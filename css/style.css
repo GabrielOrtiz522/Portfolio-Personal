@@ -90,6 +90,10 @@ header {
 /* *** Inicio - Contenedor principal *** */
 
 .contenedor-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
     border: black solid thin;
     border-radius: 1em;
     margin: 2em;
@@ -99,46 +103,49 @@ header {
     -moz-box-shadow: 0px 15px 20px -12px rgba(0,0,0,0.59);
 }
 
-.perfil{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
-}
-
-.perfil-texto {
+.perfil {
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 60%;
     font-family: 'Questrial', sans-serif;
     line-height: 1.5em;
+    
 }
-.perfil-texto h2 {
+.perfil h2 {
     line-height: 1.5em;
 }
 
-.perfil-texto h4 {
+.perfil h4 {
     margin: 1em;
 }
-.perfil-texto a{
+.perfil a{
     width: fit-content;
     margin: auto;
 }
 
-.btn-descargar{
+.archivos-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.btn-perfil{
     color: white;
-    padding: 1em;
+    padding: 0.6em;
     background-color: #000000;
-    border-radius: 2em;
+    border-radius: 1em;
     cursor: pointer;
     font-family: 'Questrial', sans-serif;
     font-weight: 400;
-    font-size: medium;
+    font-size: 15px;
 }
 
-.btn-descargar:hover {
-    background-color: #222222;
+.btn-perfil:hover {
+    background-color: #474747;
+    border: black solid thin;
 }
 
 /* *** Inicio - Habilidades *** */
@@ -190,11 +197,18 @@ header {
     border: #000000 solid thin;
     border-radius: 1em;
     gap: 1em;
+    overflow:hidden;
 }
 
 .card-proyecto img {
     border: #000000 solid thin;
-    border-radius: 1em;
+    border-radius: 1em;   
+}
+
+.card-proyecto img:hover {
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
+    transition:all .3s ease-in-out;
 }
 
 .card-proyecto h2 {
@@ -278,7 +292,7 @@ header {
     width: 100px;
 }
 .formulario .btn-enviar:hover{
-    background-color: #222222;
+    background-color: #474747;
 }
 
 /* *** Inicio - Footer *** */
