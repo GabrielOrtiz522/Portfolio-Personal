@@ -65,6 +65,7 @@ header {
     color: white;
     cursor: pointer;
     text-decoration: none;
+    position: relative;
 }
 
 .redes-nav {
@@ -84,6 +85,25 @@ header {
 .linkedin-icon i:hover{
     color: #0e76a8;
 }
+
+.nav-link:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+.nav-link:hover:after {
+    transform-origin: left;
+    transform:scaleX(1);
+}
+
 
 /* *** Fin - Sección de Barra de Navegación *** */
 
@@ -340,4 +360,61 @@ footer p {
     font-family: 'Questrial', sans-serif;
     font-size:xx-large;
     margin: 0.5em;
+}
+
+/*
+*******************************
+****** Diseño Responsive - Celular ******
+*******************************
+*/
+
+@media screen and (max-width: 768px){
+
+    /* Perfil */
+
+    .contenedor-perfil {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .contenedor-perfil img {
+        width: 300px;
+        margin: 2em;
+    }
+
+    .perfil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .archivos-perfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Habilidades */
+
+    .contenedor-habilidades {
+        display: flex;
+
+    }
+
+    /* Footer */
+    footer {
+        font-size: small;
+    }
+
+    footer p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
 }
