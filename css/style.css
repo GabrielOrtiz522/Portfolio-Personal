@@ -28,8 +28,10 @@ body{
 
 header {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    width: 100%;
     padding: 1em;
     justify-content: space-between;
     font-family: 'Montserrat', sans-serif;
@@ -68,24 +70,6 @@ header {
     position: relative;
 }
 
-.redes-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-}
-.redes-nav i {
-    color: white;
-    font-size:xx-large;
-}
-.github-icon i:hover{
-    color: #FF9900;
-}
-
-.linkedin-icon i:hover{
-    color: #0e76a8;
-}
-
 .nav-link:after{
     content: "";
     position: absolute;
@@ -104,10 +88,32 @@ header {
     transform:scaleX(1);
 }
 
-
 /* *** Fin - Sección de Barra de Navegación *** */
 
 /* *** Inicio - Contenedor principal *** */
+
+.contenedor-dmrp{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+.redes-personales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.redes-personales i {
+    color: black;
+    font-size:xx-large;
+}
+.github-icon i:hover{
+    color: #FF9900;
+}
+
+.linkedin-icon i:hover{
+    color: #0e76a8;
+}
 
 .contenedor-perfil {
     display: flex;
@@ -127,7 +133,7 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 60%;
+    width: 1200px;
     font-family: 'Questrial', sans-serif;
     line-height: 1.5em;
     
@@ -363,58 +369,7 @@ footer p {
 }
 
 /*
-*******************************
+*****************************************
 ****** Diseño Responsive - Celular ******
-*******************************
+*****************************************
 */
-
-@media screen and (max-width: 768px){
-
-    /* Perfil */
-
-    .contenedor-perfil {
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    .contenedor-perfil img {
-        width: 300px;
-        margin: 2em;
-    }
-
-    .perfil {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .archivos-perfil {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    /* Habilidades */
-
-    .contenedor-habilidades {
-        display: flex;
-
-    }
-
-    /* Footer */
-    footer {
-        font-size: small;
-    }
-
-    footer p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-
-}
